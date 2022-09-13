@@ -1,0 +1,52 @@
+#dform_container #dform_navigation li,
+#dform_container #dform_navigation li:hover,
+#dform_container #dform_navigation li.selected,
+#dform_container #dform_navigation li.selected:hover {
+    border: none;
+    border-left: 1px solid #DDD;
+    padding: 0 10px 0 10px;
+    float: left;
+    background: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: none;
+    color: #333333;
+    text-decoration: underline;
+}
+
+#dform_container #dform_navigation li:hover,
+#dform_container #dform_navigation li.selected,
+#dform_container #dform_navigation li.selected:hover {
+    font-weight: bold !important;
+    border: none !important;
+    border-left: 1px solid #DDD !important;
+}
+
+#dform_container #dform_pagenav {
+    width: 100%;
+}
+#dform_container  #dform_pageholder {
+    width: 100%;
+}
+#dform_container #dform_navigation {
+     float: right;
+}
+
+#dform_container .dform_pageValid span,
+#dform_container .dform_pageInvalid span,
+#dform_container .dform_pageInvalidCustom span{
+    background-image: none;
+}
+#dform_container #dform_navigation li.dform_pageValid:before {
+    content:url('/dformresources/content/valid.png');
+    margin-right: 5px;
+}
+#dform_container #dform_navigation li.dform_pageInvalid:before {
+    content:url('/dformresources/content/invalid.png');
+    margin-right: 5px;
+}
+#dform_container #dform_navigation li.dform_pageInvalidCustom:before {
+    content:url('/dformresources/content/warning.png');
+    margin-right: 5px;
+}
