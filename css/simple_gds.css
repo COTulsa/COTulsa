@@ -1,0 +1,747 @@
+/*
+-----------------------------------------------
+txt (and text like fields) Start
+-----------------------------------------------
+*/
+
+.txt-gov > div > label{
+  font-size: 1rem;
+  line-height: 1.2 !important;
+  font-weight:bold!important;
+  margin-top: 5px;
+}
+
+.txt-gov > div .helptext{
+    font-size: 1rem;
+    margin-top: 5px;*/
+}
+
+.txt-gov input{
+    border: 2px solid black !important;
+}
+.txt-gov input:focus{
+    box-shadow: 0px 0.2px 3px 0px #d45252 !important;
+}
+
+.txt-gov  input:focus:not([readonly]){
+    border-color: #d45252 !important;
+}
+
+.txt-gov  input:optional:focus {
+    border-color: #f9e914 !important;
+}
+
+.txt-gov  input.dform_fielderror:focus{
+    box-shadow: 0 0 0px 3px #d45252 !important;
+    border-color: #d45252 !important;
+}
+
+.txt-gov  .dform_fielderror{
+    box-shadow: /*0 0 1px 1px #d45252*/ none !important;
+    border: solid 2px #d45252 !important;
+    outline: none;
+}
+
+.txt-gov  .dform_validationMessage{
+    padding-bottom: 6px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+.txt-gov input[readonly]{
+    border-color: #DDD !important;
+    background: #DDD;
+}
+
+.dform_page .header2{
+    text-transform: initial !important;
+}
+/*txt (and text like fields) end
+-----------------------------------------------*/
+
+/*txt-gov-optional start*/
+/*-----------------------------------------------*/
+.txt-gov-optional > div > label{
+  font-size: 1rem;
+  line-height: 1.2 !important;
+  font-weight:bold!important;
+  margin-top: 5px;
+}
+
+.txt-gov-optional > div .helptext{
+    font-size: 1rem;
+    margin-top: 5px;*/
+}
+
+.txt-gov-optional input{
+    border: 2px solid black !important;
+}
+.txt-gov-optional input:focus{
+    box-shadow: 0px 0.2px 3px 0px #f9e914 !important;
+}
+
+.txt-gov-optional  input:focus:not([readonly]){
+    border-color: #f9e914 !important;
+}
+
+.txt-gov-optional  input:optional:focus {
+    border-color: #f9e914 !important;
+}
+
+.txt-gov-optional  input.dform_fielderror:focus{
+    box-shadow: 0 0 0px 3px #f9e914 !important;
+    border-color: #f9e914 !important;
+}
+
+.txt-gov-optional  .dform_fielderror{
+    box-shadow: /*0 0 1px 1px #d45252*/ none !important;
+    border: solid 2px #000000 !important;
+    outline: none;
+}
+
+.txt-gov-optional  .dform_validationMessage{
+    padding-bottom: 6px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+.txt-gov-optional input[readonly]{
+    border-color: #DDD !important;
+    background: #DDD;
+}
+/*-----------------------------------------------*/
+/*txt-gov-optional end*/
+
+/*
+-----------------------------------------------
+txta Start
+-----------------------------------------------
+*/
+
+.txta-gov > div > label {
+  font-size: 1rem;
+  line-height: 1.2 !important;
+  font-weight:bold!important;
+}
+
+.txta-gov > div .helptext {
+    font-size: 1rem;
+    /*margin-bottom: 18px;
+    margin-top: 5px;*/
+}
+
+.txta-gov textarea{
+    border: 2px solid black !important;
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.txta-gov textarea:focus:not([readonly]){
+    /*box-shadow: 0 0 0 3px #FFBF47 !important;*/
+    border-color: #d45252 !important;
+}
+
+.txta-gov textarea:optional:focus {
+    border-color: #f9e914 !important;
+}
+
+.txta-gov textarea:focus{
+    box-shadow: 0px 0.2px 3px 0px #d45252 !important;
+}
+
+.txta-gov textarea.dform_fielderror:focus{
+    box-shadow: 0 0 0px 3px #d45252 !important;
+    border-color: #d45252 !important;
+}
+
+.txta-gov .dform_fielderror{
+    box-shadow: /*0 0 1px 1px #d45252*/ none !important;
+    border: solid 2px #d45252 !important;
+    outline: none;
+}
+
+.txta-gov .dform_validationMessage{
+    padding-bottom: 6px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+
+.txta-gov textarea[readonly] {
+    border-color: #DDD !important;
+    background: #DDD;
+}
+
+/*txta-length----------------------------------*/
+
+.txta-length-message{
+    width: 100%;
+    height: 22px;
+    position: relative;
+    top: -6px;
+}
+
+/*
+-----------------------------------------------
+sel Start
+-----------------------------------------------
+*/
+
+/*Title*/
+.sel-gov > div > label  {
+  font-size: 1rem;
+  line-height: 1.2 !important;
+  font-weight:bold!important;
+}
+/*Customizes the help text */
+.sel-gov > div .helptext {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+/*Make the input more noticable*/
+.sel-gov select{
+    border: 2px solid black !important;
+    /*font-size: 20px !important;*/
+}
+/*style when field is focused - and only when readable*/
+.sel-gov  select:focus:not([readonly]){
+    box-shadow: 0 0 0 3px #d45252 !important;
+    /*border-color: black !important;*/
+}
+
+.sel-gov  select:optional:focus {
+    box-shadow: 0 0 0 3px #f9e914 !important;
+}
+
+/*style when field with error is focused*/
+.sel-gov  select.dform_fielderror:focus{
+    box-shadow: 0 0 0 3px #d45252 !important;
+    border-color: #d45252 !important;
+}
+/*change border to red when it has an error*/
+.sel-gov  .dform_fielderror{
+    box-shadow: /*0 0 1px 1px #d45252*/ none !important;
+    border: solid 2px #d45252 !important;
+    outline: none;
+    max-width: 416px !important;
+}
+/*The error text when field is invalid*/
+.sel-gov  .dform_validationMessage{
+    padding-bottom: 24px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+
+/*sel-fill-------------------------------------*/
+
+.sel-fill select{
+    width:100% !important;
+}
+
+/*Adjust select2 font styles */
+.select2-no-results{
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.select2-input{
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.select2-match{
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.select2-chosen{
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.select2-result-label{
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*sel end
+-----------------------------------------------*/
+
+.btn-gov {
+    background-color: #fff !important;
+    border: 2px solid #00672f !important;
+    border-radius: 4.5rem !important;
+    color: #fff !important;
+    background: #00672f !important;
+    cursor: pointer !important;
+    font-family: "Roboto",sans-serif;
+    margin-right: 20px !important;
+    padding: .625rem 1.5rem !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    -webkit-transition: background-color .1s ease-out,border-color .1s ease-out,color .1s ease-out !important;
+    -o-transition: background-color .1s ease-out,border-color .1s ease-out,color .1s ease-out !important;
+    transition: background-color .1s ease-out,border-color .1s ease-out,color .1s ease-out !important;
+    vertical-align: middle !important;
+    box-shadow: none !important;
+    font-size: 1rem !important;
+}
+
+.btn-gov:hover{
+    box-shadow: inset 0 -2px 0 #003618 !important;
+    background: #00682e !important;
+}
+
+.btn-gov:focus{
+    box-shadow: inset 0 -2px 0 #003618, 0 0 0 3px #FFBF47 !important;
+}
+
+.btn-back {
+	background-color: #FFFFFF !important;
+	border-color: #000000 !important;
+	color: #000000 !important;
+	text-decoration: none !important;
+	border: 2px solid #000000 !important;
+   	border-radius: 4.5rem !important;
+    	font-size: 1rem !important;
+	background: #d9d9d9 !important;
+}
+.btn-back:focus{
+    box-shadow: inset 0 0 0px 5px #000000 !important;
+}
+
+.btn-gov-secondary {
+    background-color: #fff !important;
+    background: #BDE5F8 !important;
+    border: 2px solid #00529B !important;
+    border-radius: 4.5rem !important;
+    margin: 0 0 .75rem !important;
+    padding: .625rem 1.5rem !important;
+    -o-transition: background-color .1s ease-out,border-color .1s ease-out,color .1s ease-out !important;
+    font-size: 1rem !important;
+}
+
+#dform_container .helptext {
+    color: #585859;
+    font-style: none !important;
+}
+
+/* info-notice bar */
+div.icon-place {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.dform_widget_type_html .info-notice{
+    padding: 0px 0px 0px 55px;
+}
+.info-notice-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  background-color: #00529b;/*uncheck background*/
+  border-radius: 50%;
+  margin-left: 5px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.info-notice {
+    position: relative;
+    background-color: #BDE5F8;
+    padding: 0px 0 0 0px;
+    border: solid #00529B;
+    border-width: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.info-notice-icon-a {
+  position: absolute;
+  left: 17px;
+  top: 13px;
+  width: 0px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 5px 0 0;
+}
+.info-notice-icon-b {
+  position: absolute;
+  left: 17px;
+  top: 5px;
+  width: 0px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 5px 0 0;
+}
+
+.warning-notice {
+    position: relative;
+    background-color: #FFBABA;
+    padding: 10px 10px 10px 55px;
+    border: solid #b10e1e;
+    border-width: 5px ;
+    margin-bottom: 15px;
+}
+.dform_widget_type_html .warning-notice{
+    padding: 0px 0px 0px 55px;
+}
+.warning-notice-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  background-color: #b10e1e;
+  border-radius: 50%;
+  margin-left: 5px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.warning-notice-icon-a {
+  position: absolute;
+  left: 17px;
+  top: 6px;
+  width: 0px;
+  height: 19px;
+  border: solid white;
+  border-width: 0 5px 0 0;
+}
+.warning-notice-icon-b {
+  position: absolute;
+  left: 17px;
+  top: 28px;
+  width: 0px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 5px 0 0;
+}
+
+.width-fit-content{
+    width: fit-content !important;
+    width: intrinsic !important;
+    width: -moz-max-content !important;
+}
+
+.paragraph-normal, .p-n{
+    font-size: 1rem !important;
+    line-height: 1.17 !important;
+    padding: 0px 10px 0px 0px;
+}
+
+#dform_container select {
+     border: 2px solid black !important;
+}
+
+.locationsearch_resultsholder > span:not(:last-child) {
+    margin-right: 15px;
+}
+
+.visibility-hidden{visibility: hidden;}
+.visibility-visible{visibility: visible;}
+
+.file-gov > div > label {
+    font-size: 1rem;
+    margin-bottom: 30px !important;
+}
+.file-gov > div .helptext{
+  font-size: 1rem;
+  position: relative;
+  top: -80px;
+}
+.file-gov{
+    font-size: 1rem;
+    
+}
+.file-gov .dform_validationMessage{
+    position: absolute;
+    font-weight: bold !important;
+    top: -27px;
+}
+.file-gov input{
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    width: 100% !important;
+}
+
+.file-gov .dform_filenames span{
+    display: inline-block;
+}
+
+.file-gov .dform_filenames span:before{
+    content: "" !important;
+}
+
+.file-gov  input:hover ~ .file-gov-icon{
+    background: #BDE5F8 !important; /*Darkened Varint blue*/
+}
+
+.file-gov  input:focus ~ .file-gov-icon{
+    background: #BDE5F8 !important; /*Darkened Varint blue*/
+    box-shadow: inset 0 -2px 0 #00529B, 0 0 0 3px #FFBF47 !important;
+}
+
+.file-gov  input.dform_fielderror:focus ~ .file-gov-icon{
+    box-shadow: inset 0 -2px 0 #BDE5F8, 0px 0.2px 0px 2px #d45252, 0px 0.2px 0px 5px #FFBF47 !important;
+    border-color: #d45252 !important;
+}
+
+.file-gov  .dform_fielderror ~ .file-gov-icon{
+    box-shadow: inset 0 -2px 0 #BDE5F8, 0px 0.2px 0px 2px #d45252;
+    outline: none;
+}
+.file-gov-icon {
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 42px;
+  width: 100%; 
+  top: 0.6px;
+  cursor: pointer;
+  
+  color: #fff;
+  border: 1px;
+  border-radius: 4.5rem;
+  outline-offset: -1px;
+  background: #BDE5F8; 
+  border: 2px solid #00529B !important;
+}
+
+.file-gov-text {
+    cursor: pointer;
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 1rem !important;
+  font-weight: normal !important;
+  color: #4d4d4d !important;
+}
+
+.file-gov .dform_fileupload_progressbar{
+    visibility: hidden;
+    height: 0px !important;
+    margin: 0px !important;
+    border: 0px !important;
+}
+
+/*Span for each radio button*/
+.rad-gov > div > fieldset > span  {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  /*cursor: pointer;*/
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Removes default border */
+.rad-gov .radiogroup{
+    border: none !important;
+    padding-left: 0px !important;
+}
+
+.rad-gov > div > fieldset > span  input {
+  position: absolute;
+  opacity: 0;
+  left: 0px !important;
+  width:100% !important;
+  height:100% !important;
+  z-index:1 !important;
+  cursor: pointer;
+}
+/*The actual unchecked button */
+.rad-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 28px;
+  background-color: white;/*uncheck background*/
+  border-radius: 75%;
+  box-shadow: inset 0 0 0 3px #00529B !important;
+}
+
+.rad-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rad-gov > div > fieldset > span  input:checked ~ .rad-check:after {
+  display: block;
+}
+
+.rad-gov > div > fieldset > span  .rad-check:after {
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00529B !important;
+}
+
+.rad-gov > div > fieldset .helptext {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.rad-gov legend {
+    font-size: 1rem;
+    line-height: 1.2 !important;
+    margin-bottom: 0px !important;
+}
+
+.no-legend legend {
+    font-size: 0px !important;
+}
+
+.rad-gov  input[type="radio"].dform_fielderror ~ span{
+    box-shadow: inset 0 0 0 3px #d45252;
+}
+
+.rad-gov  .dform_validationMessage{
+    padding-bottom: 24px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+.rad-gov > div > fieldset > span  input:focus ~ .rad-check{
+    /*border: 3px solid red !important;*/
+    box-shadow: 0 0 0 3px #FFBF47, inset 0 0 0 3px #00529b;
+}
+.rad-gov > div > fieldset{
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.rad-gov label{
+    text-transform: inherit;
+}
+.rad-gov.rad-uppercase label{
+    text-transform: uppercase;
+}
+.rad-gov.rad-capitalize label{
+    text-transform: capitalize;
+}
+.rad-gov.rad-none label{
+    text-transform: none;
+}
+.rad-gov.rad-lowercase label{
+    text-transform: lowercase;
+}
+
+/*Custom gov radio buttons - End
+-----------------------------------------------*/
+
+
+@media (min-width: 769px){
+
+    .file-gov input, .file-gov-icon{
+        width: auto !important;
+        padding-right: 10px !important;
+    }
+}
+
+/*File-progress--------------------------------*/
+
+.file-progress .dform_fileupload_progressbar{
+    visibility: visible;
+    height: 30px !important;
+    margin: 5px !important;
+    border: 2px solid #6d3465 !important;/*Verint blue*/ 
+}
+.file-progress .dform_fileupload_progressbar > div{
+    background: #6d3465 !important; /*Verint blue*/
+}
+
+/*File-no-legend-------------------------------*/
+
+.file-no-legend div > label{
+    visibility: hidden !important;
+    height: 0px !important;
+}
+
+.label,label {
+	width: auto !important;
+}
+
+/*Narrated-section----------------------------*/
+.narrated-section{
+    opacity:0;
+}
+
+/*Search Widget------------------------------*/
+.searchwidget{
+    border:none !important;
+    position: relative;
+    right: 10px;
+}
+
+/*Customer search----------------------------*/
+#dform_container .searchwidget select {
+        max-width: 70% !important;
+}
+
+#dform_container fieldset.area>legend, #dform_container fieldset.box>legend , #dform_container fieldset.searchwidget>legend {
+	font-size: 1.5em;
+	font-weight: normal;
+	position: relative !important;
+	right: 3px !important;
+}
+
+.dform_fileupload_progressbar {
+    display:none;
+}
+
+#dform_container .helptext{
+    font-style: normal;
+}
+
+#dform_container {
+    font-size: 16px;
+}
+
+.select2-container .select2-choice{
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    border: 2px solid black;
+    white-space: nowrap !important;
+    line-height: 30px;
+    text-decoration: none !important;
+    border-radius: 0px;
+    width: auto !important;
+    max-width: 400px !important;
+}
+
+.select2-input{
+    max-width:100% !important;
+}
+
+.select2-search{
+    max-width:100% !important;
+}
+
+.select2-with-searchbox{
+    max-width:400px !important;   
+}
+
+.select2-chosen{
+    font-weight: normal !important;
+}
+
+#dform_container input, #dform_container select, #dform_container textarea {
+    font-size: 1rem;
+    padding: 8px;
+    border: 2px solid #111;
+}
