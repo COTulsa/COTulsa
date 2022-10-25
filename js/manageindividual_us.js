@@ -121,6 +121,8 @@ function do_KDF_Ready_Individual(event, kdf) {
     }
 	
     toggleNavigation();
+	
+	$('#dform_widget_button_but_homepage').hide();
 }//end do_KDF_Ready_Individual
 
 function do_KDF_Custom_Individual(event, kdf, response, action) {	
