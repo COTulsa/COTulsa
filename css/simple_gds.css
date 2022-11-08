@@ -4,6 +4,235 @@ txt (and text like fields) Start
 -----------------------------------------------
 */
 
+/*
+-----------------------------------------------
+KS: gov checkbox Start
+-----------------------------------------------
+*/
+
+/*KS: Div for the checkbox */
+.chk-gov > div  {
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+.chk-gov > div  {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*/
+
+
+
+/*KS: The main clickable element - it's the width of the area */
+.chk-gov > div  input {
+  position: absolute;
+  opacity: 0;
+  left: 0px !important;
+  width:100% !important;
+  height:100% !important;
+  z-index:1 !important;
+  cursor: pointer;
+}
+/*KS: The actual unchecked check box */
+.chk-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 29px;
+  border: 3px solid #03498e;
+  border-radius: 15%;
+}
+/*KS: When the checkbox is checked, add a blue background */
+.chk-gov > div  input:checked ~ .chk-check {
+  background-color: #03498e;
+}
+/*KS: Create the indicator (the dot/circle - hidden when not checked) */
+.chk-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/*KS: Show the indicator (dot/circle) when checked */
+.chk-gov > div  input:checked ~ .chk-check:after {
+  display: block;
+}
+/*KS: Style the indicator (dot/circle) */
+.chk-gov > div  .chk-check:after {
+  left: 7px;
+  top: -2px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*KS: Customizes the helptext */
+.chk-gov > div .helptext {
+    font-size: 14px;
+    position: absolute;
+    top: 32px;
+    left:0px;
+}
+/*KS: Removes the title/legend */
+.no-legend > div > label {
+    font-size: 0px !important;
+}
+/*KS: Checkbox error message is dirrent*/
+.chk-gov  .dform_validationMessage{
+    position: absolute;
+    top: -22px;
+    left: 0px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    /*padding-bottom: 24px !important;*/
+}
+/*KS: add red border to input that are required/have an error*/
+.chk-gov  input[type="checkbox"].dform_fielderror ~ span{
+    border-color: #d45252;
+    /*box-shadow: 0 0 3px 3px #d45252 !important;*/
+}
+.chk-gov > div  input:focus ~ .chk-check{
+    /*border: 3px solid red !important;*/
+    box-shadow: 0 0 0 3px #FFBF47;
+}
+/*KS: gov checkbox end
+-----------------------------------------------*/
+
+
+/* 
+-----------------------------------------------
+KS: Custom gov multi-checkbox - Start
+-----------------------------------------------
+*/
+
+/*KS: Span for each checkbox*/
+.mchk-gov > div > fieldset > span  {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  /*cursor: pointer;*/
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*KS: Removes default border */
+.mchk-gov .checkboxgroup{
+    border: none !important;
+    padding-left: 0px !important;
+}
+/*KS: The main clickable element - it's the width of the area */
+.mchk-gov > div > fieldset > span  input {
+  position: absolute;
+  opacity: 0;
+  left: 0px !important;
+  width:100% !important;
+  height:100% !important;
+  z-index:1 !important;
+  cursor: pointer;
+}
+/*KS: The actual unchecked button */
+.mchk-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 29px;
+  background-color: white;/*uncheck background*/
+  border-radius: 15%;
+  border: 3px solid #03498e;
+}
+/*KS: When checked, it fills background*/
+.mchk-gov > div > fieldset > span  input:checked ~ .mchk-check {
+    background-color: #03498e;
+}
+/*KS: Create the indicator (the dot/circle - hidden when not checked) */
+.mchk-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/*KS: Show the indicator (dot/circle) when checked */
+.mchk-gov > div > fieldset > span  input:checked ~ .mchk-check:after {
+  display: block;
+}
+/*KS: Style the indicator (dot/circle) */
+.mchk-gov > div > fieldset > span  .mchk-check:after {
+  left: 7px;
+  top: -2px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*KS: Customizes the help text */
+.mchk-gov > div > fieldset .helptext {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+/*KS: Customizes the title/legend */
+.mchk-gov legend {
+    font-size: 24px;
+    line-height: 1.2 !important;
+    margin-bottom: 0 !important;
+}
+/*KS: Style to remove legend*/
+.no-legend legend {
+    font-size: 0 !important;
+}
+/*KS: add red border to input that are required/have an error*/
+.mchk-gov input[type="checkbox"].dform_fielderror ~ span{
+    border-color: #d45252;
+    /*box-shadow: 0 0 3px 3px #d45252 !important;*/
+}
+/*KS: The error text when field is invalid*/
+.mchk-gov .dform_validationMessage{
+    padding-bottom: 24px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.mchk-gov > div > fieldset > span  input:focus ~ .mchk-check{
+    /*border: 3px solid red !important;*/
+    box-shadow: 0 0 0 3px #FFBF47;
+}
+.mchk-gov > div > fieldset{
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/*KS quick fix to avoid changing all mchk items*/
+.mchk-gov label{
+    text-transform: lowercase;
+}
+/*KS: Custom gov multi-checkbox - End
+-----------------------------------------------*/
+
 .txt-gov > div > label{
   font-size: 1rem;
   line-height: 1.2 !important;
