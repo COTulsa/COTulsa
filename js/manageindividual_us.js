@@ -10,6 +10,15 @@ var yd_cs_search_again_clicked = false;
 var individualTemplateIdentifier = 'individual_template_';
 
 function do_KDF_Ready_Individual(event, kdf) {
+	
+	if (KDF.kdf().access == 'citizen'){
+		if (!KDF.kdf().authenticated)	{
+			$("#dform_widget_txt_firstname").attr("readonly", false);
+			$("#dform_widget_txt_lastname").attr("readonly", false);
+			$("#dform_widget_eml_email").attr("readonly", false);
+			$("#dform_widget_txt_contact_number").attr("readonly", false);
+		}
+	}
 
 	var form_name = kdf.name;
 	KDF.showSection('area_customer_information');
