@@ -24,12 +24,17 @@ function applyNewStyle(){
     if (hasDefaultsInArguments){
         defaultNewStyle(arguments[0])
     }
+	
+	$("[data-type='multicheckbox']").addClass('mchk-gov');
+	$("[data-type='checkbox']").addClass('chk-gov');
 
     var elementsToUpdate = [
 	['.rad-gov'],    
         ['.file-gov'],
         ['.file-gov[class*="file-limit-"]','file-limit'],
         ['[data-type="text"] div:first-child .dform_hidden','txt-hidden'],
+		['.chk-gov'],
+		['.mchk-gov'],
     ];
     
     elementsToUpdate.forEach(function(item){
@@ -62,6 +67,15 @@ var updateStyleFunctions = {
 	'rad-gov': function(element){
 		var el = element.find('> div > fieldset > span').not(":has(span)");
         el.append('<span class="rad-check"></span>');
+	},
+	'chk-gov': function(element){
+		var el = element.find('> div').not(":has(span.chk-check)");
+        el.append('<span class="chk-check"></span>');
+        el.find(".helptext").insertAfter(element.find("label"));
+	},
+	'mchk-gov': function(element){
+		var el = element.find('> div > fieldset > span').not(":has(span)");
+        el.append('<span class="mchk-check"></span>');
 	},
 	'file-gov': function(element){
 		$("[type='file']").attr('title', 'File upload');
