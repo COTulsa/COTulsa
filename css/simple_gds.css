@@ -17,7 +17,7 @@ KS: gov checkbox Start
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -133,7 +133,7 @@ KS: Custom gov multi-checkbox - Start
   padding-left: 35px;
   margin-bottom: 12px;
   /*cursor: pointer;*/
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -198,7 +198,7 @@ KS: Custom gov multi-checkbox - Start
 }
 /*KS: Customizes the title/legend */
 .mchk-gov legend {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.2 !important;
     margin-bottom: 0 !important;
 }
@@ -226,10 +226,6 @@ KS: Custom gov multi-checkbox - Start
     padding-bottom: 0 !important;
 }
 
-/*KS quick fix to avoid changing all mchk items*/
-.mchk-gov label{
-    text-transform: lowercase;
-}
 /*KS: Custom gov multi-checkbox - End
 -----------------------------------------------*/
 
