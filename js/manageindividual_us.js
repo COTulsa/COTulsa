@@ -140,21 +140,8 @@ function do_KDF_Custom_Individual(event, kdf, response, action) {
 	if (response.actionedby.indexOf(individualTemplateIdentifier) === 0) {isIndividualTemplate = true;}
 	
 	if (action == 'reverse-geocode-arcgis') {
-		/*
-		var reversegeo_field=$('.dform_gis_reversegeo');
-    console.log('reversegeo_field');
-    console.log(reversegeo_field);
-     var local_lat=KDF.getVal('le_gis_lat');
-    var local_lon=KDF.getVal('le_gis_lon');
-    //reversegeo_field[0].innerHTML;
-    var newContent='<span>'+return_address+'</span><img src="/dformresources/content/rgeo.png" alt="pin" title="['+local_lon+','+local_lat+']">';
-
-    console.log('newContent');
-    console.log(newContent);
-       reversegeo_field[0].innerHTML=newContent;
-	   */
 	   $('.dform_gis_reversegeo').html('<span>'+response.data.description+'</span><img src="tulsadev.form.uspreview.empro.verintcloudservices.com/dformresources/content/rgeo.png" alt="pin"')
-		
+	   KDF.setVal('txt_location', response.data.description);
 	}
 	
 	if (isIndividualTemplate) {		
@@ -258,6 +245,8 @@ function do_KDF_optionSelected_Individual(event, kdf, field, label, val) {
     
     if(field==='cs_customer_search_id'){
         showCustomerSearchYdWidgets();
+    } else if (field==='le_eventcode'){
+	   KDF.setVal('le_title', $("#dform_widget_le_eventcode option:selected").text());
     }
 } //end do_KDF_optionSelected_Individual
 
