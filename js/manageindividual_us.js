@@ -140,7 +140,7 @@ function do_KDF_Custom_Individual(event, kdf, response, action) {
 	if (response.actionedby.indexOf(individualTemplateIdentifier) === 0) {isIndividualTemplate = true;}
 	
 	if (action == 'reverse-geocode-arcgis') {
-	   $('.dform_gis_reversegeo').html('<span>'+response.data.description+'</span><img src="tulsadev.form.uspreview.empro.verintcloudservices.com/dformresources/content/rgeo.png" alt="pin"')
+	   $('.dform_gis_reversegeo').html('<span>'+response.data.description+'</span><img src="https://tulsadev.form.uspreview.empro.verintcloudservices.com/dformresources/content/rgeo.png" alt="pin" />')
 	   KDF.setVal('txt_location', response.data.description);
 	}
 	
