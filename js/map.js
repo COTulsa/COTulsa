@@ -14,6 +14,16 @@
 	]);
 
 function do_KDF_mapReady(event, kdf, type, name, map, positionLayer, markerLayer, marker, projection){
+	if (kdf.viewmode === "U" || kdf.viewmode === "R"){
+		
+		var source = new proj4.Proj('SR-ORG:7483');    
+		var dest = new proj4.Proj('EPSG:2267');
+		
+		var convertPointP4 = new proj4.Point(KDF.getVal('txt_xcoordinate'),KDF.getVal('txt_ycoordinate'));
+		proj4.transform(source, dest, convertPointP4); 
+		KDF.customdata('reverse-geocode-arcgis', 'readonlymode', true, true, { 'longitude': convertPointP4.x.toString(), 'latitude': convertPointP4.y.toString() });
+	}
+	
    map.on("click", function(evt) {
 	
 	KDF.setVal("le_gis_lat", evt.mapPoint.y);
@@ -29,7 +39,7 @@ function do_KDF_mapReady(event, kdf, type, name, map, positionLayer, markerLayer
     
     var convertPointP4 = new proj4.Point(evt.mapPoint.x.toString(),evt.mapPoint.y.toString());
     proj4.transform(source, dest, convertPointP4); 
-	KDF.customdata('reverse-geocode-arcgis', 'do_KDF_mapClicked', true, true, { 'longitude': convertPointP4.x.toString(), 'latitude': convertPointP4.y.toString() });
+	KDF.customdata('reverse-geocode-arcgis', 'do_KDF_mapReady', true, true, { 'longitude': convertPointP4.x.toString(), 'latitude': convertPointP4.y.toString() });
 	
 	map.setZoom(16)
 	map.centerAt(new esri.geometry.Point(evt.mapPoint.x, evt.mapPoint.y, new esri.SpatialReference({ wkid: 102100 })));
@@ -39,7 +49,5 @@ function do_KDF_mapReady(event, kdf, type, name, map, positionLayer, markerLayer
  }
 
 function do_KDF_mapClicked(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon){
-	console.log(lon)
-	console.log(lat)	
 	
 }
